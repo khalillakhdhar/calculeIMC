@@ -27,6 +27,8 @@ public class Calculatrice {
         this.poids = poids;
     }
 
+   
+
     public Calculatrice(double taille, double poids) {
         this.taille = taille;
         this.poids = poids;
@@ -42,6 +44,25 @@ public class Calculatrice {
     
     }
     
+    public String interpretation()
+    {
+    int indice=calculeImc();
+    if(indice<20)
+        return "maigre";
+    else if(indice<=25)
+    {
+    return "idéale";
+    }
+    // if(indice>=20 && indice<=25)
+    else
+        return "surpoids";
+    
+    }
+
+    @Override
+    public String toString() {
+        return "Poids= "+poids+" taille= "+taille+" IMC= "+calculeImc()+ "vous êtes "+interpretation();
+    }
     
     
 }
