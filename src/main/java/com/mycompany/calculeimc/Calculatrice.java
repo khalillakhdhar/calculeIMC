@@ -38,7 +38,7 @@ public class Calculatrice {
     }
     public int calculeImc()
     {
-        return (int) Math.round(poids/Math.pow(taille,2));
+        return (int) Math.round(poids /(Math.pow(taille,2)));
     
     
     

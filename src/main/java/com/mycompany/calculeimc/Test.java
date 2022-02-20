@@ -11,7 +11,8 @@ package com.mycompany.calculeimc;
 public class Test {
     public static void main(String args[])
     {
-    
+    Calculatrice c=new Calculatrice( 1.92,80);
+    System.out.println(c.toString());
     
     }
 }
